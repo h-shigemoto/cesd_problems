@@ -1,0 +1,127 @@
+- answers:
+  - answer1: Rarely or none of the time (<1 day)
+    answer2: Some or a little of the time (1-2 days)
+    answer3: Occasionally or a moderate amount of the time (3-4 days)
+    answer4: Most or all of the time (5-7 days)
+- problems:
+  - id: 1
+    problem:  I was bothered by things that don't usually bother me.
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 2
+    problem:  I did not feel like eating; my appetite was poor.
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 3
+    problem: I felt that I could not shake off the blues even with the help of my family or friends.
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 4
+    problem: I felt that I was just as good as other people.
+    point1: 3
+    point2: 2
+    point3: 1
+    point4: 0
+  - id: 5
+    problem: I had trouble keeping my mind on what I was doing.
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 6
+    problem: I felt depressed.
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 7
+    problem: I felt everything I did was an effort.
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 8
+    problem: I felt hopeful about the future.
+    point1: 3
+    point2: 2
+    point3: 1
+    point4: 0
+  - id: 9
+    problem: I thought my life had been a failure.
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 10
+    problem: I felt fearful.
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 11
+    problem: My sleep was restless.
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 12
+    problem: I was happy.
+    point1: 3
+    point2: 2
+    point3: 1
+    point4: 0
+  - id: 13
+    problem: I talked less than usual.
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 14
+    problem: I felt lonely.
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 15
+    problem: People were unfriendly.
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 16
+    problem: I enjoyed life.
+    point1: 3
+    point2: 2
+    point3: 1
+    point4: 0
+  - id: 17
+    problem: I had crying spells.
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 18
+    problem: I felt sad.
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 19
+    problem: I felt that people disliked me.
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 20
+    problem: I could not get "going".
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+- criteria: 16

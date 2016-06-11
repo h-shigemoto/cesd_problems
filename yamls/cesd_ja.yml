@@ -1,0 +1,127 @@
+- answers:
+  - answer1: ないかあってもほんの少し　この週間てまったくないか、あっても１日足らず
+    answer2: 少し　この1週間で１～2日
+    answer3: かなり　この1週間で3～4日
+    answer4: ほとんど　この1週間で5日以上
+- problems:
+  - id: 1
+    problem: 普段は何でもないことが煩わしい。
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 2
+    problem: 食べたくない。食欲が落ちた。
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 3
+    problem: 家族や友人に助けてもらっても憂鬱な気分が晴れない。
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 4
+    problem: 他の人と同じ程度の能力があると思える。
+    point1: 3
+    point2: 2
+    point3: 1
+    point4: 0
+  - id: 5
+    problem: 物事に集中することができない。
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 6
+    problem: 落ち込んでいる。
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 7
+    problem:  何をするのもめんどうだ。
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 8
+    problem: 将来に希望がある。
+    point1: 3
+    point2: 2
+    point3: 1
+    point4: 0
+  - id: 9
+    problem: 自分の人生は失敗だったと思う。
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 10
+    problem: 何か恐ろしく感じる。
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 11
+    problem: 熟眠できない。
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 12
+    problem: 幸せに感じる。
+    point1: 3
+    point2: 2
+    point3: 1
+    point4: 0
+  - id: 13
+    problem: いつもより口数が少ない。
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 14
+    problem: 寂しいと感じる。
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 15
+    problem: 他の人がよそよそしいと感じる。
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 16
+    problem: 生活を楽しく感じる。
+    point1: 3
+    point2: 2
+    point3: 1
+    point4: 0
+  - id: 17
+    problem: 泣き続けることがある。
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 18
+    problem: 悲しいと感じる。
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 19
+    problem: みんなが私を嫌っていると感じる。
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+  - id: 20
+    problem: 何も手につかない。
+    point1: 0
+    point2: 1
+    point3: 2
+    point4: 3
+- criteria: 16
