@@ -10,8 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["corporation.ore@gmail.com"]
 
   spec.summary       = %q{This gem is ces-d problems and points set.}
-  spec.description   = %q{This gem is ces-d problems and points set. Load problems and points from yaml file. Yaml file placed in the config folder.}
-  spec.homepage      = "https://github.com/h-shigemoto/cesd_problems"
+  spec.description   = spec.summary
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
