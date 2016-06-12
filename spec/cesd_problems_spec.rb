@@ -16,4 +16,14 @@ describe CesdProblems do
     problems = CesdProblems.get_en_problems
     expect(problems).to be_truthy
   end
+
+  it 'over criteria? false' do
+    rs = CesdProblems.over_criteria?(15)
+    expect(rs).to be_falsey
+  end
+
+  it 'over criteria? true' do
+    rs = CesdProblems.over_criteria?(16)
+    expect(rs).to be_truthy
+  end
 end

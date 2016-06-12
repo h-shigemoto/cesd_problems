@@ -3,13 +3,12 @@ require "cesd_problems/version"
 # ces-d problems module.
 module CesdProblems
 
-  # get ces-d problems and points to hash(Japanese)
+  # get ces-d problems and points by hash(Japanese)
   # @return [Hash] ces-d problems and points
   def self.get_ja_problems
+
     ja_problems = {
-      answers: { 
-        answer1: "ないかあってもほんの少し　この週間てまったくないか、あっても１日足らず", answer2: "少し　この1週間で１～2日", answer3: "かなり　この1週間で3～4日", answer4: "ほとんど　この1週間で5日以上"
-      },
+      answers: [ "ないかあってもほんの少し　この週間てまったくないか、あっても１日足らず", "少し　この1週間で１～2日", "かなり　この1週間で3～4日", "ほとんど　この1週間で5日以上" ],
       problems: {
         p1: { problem: "普段は何でもないことが煩わしい。", points: [0, 1, 2, 3] },
         p2: { problem: "食べたくない。食欲が落ちた。", points: [0, 1, 2, 3] },
@@ -38,13 +37,12 @@ module CesdProblems
     ja_problems
   end
 
-  # get ces-d problems and points to hash(English)
+  # get ces-d problems and points by hash(English)
   # return [Hash] ces-d problems and points
   def self.get_en_problems
+
     en_problems = {
-      answers: {
-        answer1: "Rarely or none of the time (<1 day)", answer2: "Some or a little of the time (1-2 days)", answer3: "Occasionally or a moderate amount of the time (3-4 days)", answer4: "Most or all of the time (5-7 days)"
-      },
+      answers: ["Rarely or none of the time (<1 day)", "Some or a little of the time (1-2 days)", "Occasionally or a moderate amount of the time (3-4 days)", "Most or all of the time (5-7 days)" ],
       problems: {
         p1: { problem: "I was bothered by things that don't usually bother me.", points: [0, 1, 2, 3] },
         p2: { problem: "I did not feel like eating; my appetite was poor.", points: [0, 1, 2, 3] },
@@ -71,5 +69,13 @@ module CesdProblems
     }
 
     en_problems
+  end
+
+  # judge over creteria.
+  # @param [integer] total total point.
+  # @param [integer] criteria criteria
+  # @return [boolean] true:over criteria / falase:under criteria
+  def self.over_criteria?(total, criteria=16)
+    return total >= criteria
   end
 end
