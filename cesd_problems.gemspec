@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = CesdProblems::VERSION
   spec.authors       = ["h.shigemoto"]
   spec.email         = ["corporation.ore@gmail.com"]
-
+  spec.homepage      = "https://github.com/h-shigemoto/cesd_problems"
   spec.summary       = %q{This gem is ces-d problems and points set.}
   spec.description   = spec.summary
   spec.license       = "MIT"
