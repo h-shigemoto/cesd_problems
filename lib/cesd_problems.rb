@@ -3,9 +3,19 @@ require "cesd_problems/version"
 # ces-d problems module.
 module CesdProblems
 
+  # get all problems.
+  GET_ALL = 0
+  # get answers only.
+  GET_ANSWERS = 1
+  # get problems only.
+  GET_PROBLEMS = 2
+  # get criteria only.
+  GET_CRITERIA = 3
+
   # get ces-d problems and points by hash(Japanese)
-  # @return [Hash] ces-d problems and points
-  def self.get_ja_problems
+  # @param [integer] mode get mode.
+  # @return [Hash] ces-d problems and points deoends on mode.
+  def self.get_ja_problems(mode=0)
 
     ja_problems = {
       answers: [ "ないかあってもほんの少し　この1週間で全くないか、あっても１日足らず", "少し　この1週間で１～2日", "かなり　この1週間で3～4日", "ほとんど　この1週間で5日以上" ],
@@ -34,12 +44,15 @@ module CesdProblems
       criteria: 16
     }
 
-    ja_problems
+    # extract
+    extract_problems = extract(ja_problems, mode)
+    extract_problems
   end
 
   # get ces-d problems and points by hash(English)
-  # return [Hash] ces-d problems and points
-  def self.get_en_problems
+  # @param [integer] mode get mode.
+  # @return [Hash] ces-d problems and points depends on mode.
+  def self.get_en_problems(mode=0)
 
     en_problems = {
       answers: ["Rarely or none of the time (<1 day)", "Some or a little of the time (1-2 days)", "Occasionally or a moderate amount of the time (3-4 days)", "Most or all of the time (5-7 days)" ],
@@ -68,7 +81,32 @@ module CesdProblems
       criteria: 16
     }
 
-    en_problems
+    # extract
+    extract_problems = extract(en_problems, mode)
+    extract_problems
+  end
+
+  # extract problems depends on mode.
+  # @param [integer] mode get mode.
+  # @return [Hash] ces-d problems and points depends on mode.
+  def self.extract(problems, mode)
+
+    extract_problems = nil
+
+    case mode
+    when GET_ALL then
+      extract_problems = problems
+    when GET_ANSWERS then
+      extract_problems = { answers: problems[:answers] }
+    when GET_PROBLEMS then
+      extract_problems = { problems: problems[:problems] }
+    when GET_CRITERIA then
+      extract_problems = { criteria: problems[:criteria] }
+    else
+      extract_problems = nil
+    end
+
+    extract_problems
   end
 
   # judge over creteria.
@@ -77,5 +115,11 @@ module CesdProblems
   # @return [boolean] true:over criteria / falase:under criteria
   def self.over_criteria?(total, criteria=16)
     return total >= criteria
+  end
+
+  # get available language.
+  # @return [String] available language.
+  def self.available_language
+    return "Japanese, English"
   end
 end
