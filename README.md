@@ -2,7 +2,9 @@
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cesd_problems`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TODO: Delete this and the text above, and describe your gem
+This gem provide ces-d problems and points.
+
+Problems and points return by hash, you can choose problems and points, answers, criteria only.
 
 ## Installation
 
@@ -22,7 +24,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'cesd_problems'
+
+# get all.
+ja_problems = CesdProblems.get_ja_problems
+en_problems = CesdProblems.get_en_problems
+
+# get problems and points only.
+ja_problems_only = CesdProblems.get_ja_problems(CesdProblems::PROBLEMS)
+en_problems_only = CesdProblems.get_en_problems(CesdProblems::PROBLEMS)
+```
 
 ## Development
 
@@ -32,7 +44,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/cesd_problems. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/h-shigemoto/cesd_problems. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License

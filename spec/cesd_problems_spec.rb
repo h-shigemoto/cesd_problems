@@ -14,7 +14,7 @@ describe CesdProblems do
 
   it 'get test : ja, answers' do
     # answers only.
-    problems = CesdProblems.get_ja_problems(CesdProblems::GET_ANSWERS)
+    problems = CesdProblems.get_ja_problems(CesdProblems::ANSWERS)
 
     problems.each { |key, value|
       expect(key.to_s).to eq "answers"
@@ -23,7 +23,7 @@ describe CesdProblems do
 
   it 'get test : ja, problems' do
     # problems only
-    problems = CesdProblems.get_ja_problems(CesdProblems::GET_PROBLEMS)
+    problems = CesdProblems.get_ja_problems(CesdProblems::PROBLEMS)
 
     problems.each { |key, value|
       expect(key.to_s).to eq "problems"
@@ -32,7 +32,7 @@ describe CesdProblems do
 
   it 'get test : ja, criteria' do
     # criteria only
-    problems = CesdProblems.get_ja_problems(CesdProblems::GET_CRITERIA)
+    problems = CesdProblems.get_ja_problems(CesdProblems::CRITERIA)
 
     problems.each { |key, value|
       expect(key.to_s).to eq "criteria"
@@ -47,7 +47,7 @@ describe CesdProblems do
 
   it 'get test : en, answers' do
     # answers only.
-    problems = CesdProblems.get_en_problems(CesdProblems::GET_ANSWERS)
+    problems = CesdProblems.get_en_problems(CesdProblems::ANSWERS)
 
     problems.each { |key, value|
       expect(key.to_s).to eq "answers"
@@ -56,7 +56,7 @@ describe CesdProblems do
 
   it 'get test : en, problems' do
     # problems only
-    problems = CesdProblems.get_en_problems(CesdProblems::GET_PROBLEMS)
+    problems = CesdProblems.get_en_problems(CesdProblems::PROBLEMS)
 
     problems.each { |key, value|
       expect(key.to_s).to eq "problems"
@@ -65,7 +65,7 @@ describe CesdProblems do
 
   it 'get test : en, criteria' do
     # criteria only
-    problems = CesdProblems.get_en_problems(CesdProblems::GET_CRITERIA)
+    problems = CesdProblems.get_en_problems(CesdProblems::CRITERIA)
 
     problems.each { |key, value|
       expect(key.to_s).to eq "criteria"
@@ -74,7 +74,7 @@ describe CesdProblems do
 
   it 'extract test' do
     problems = CesdProblems.get_en_problems
-    problems = CesdProblems.extract(problems, CesdProblems::GET_ANSWERS)
+    problems = CesdProblems.extract(problems, CesdProblems::ANSWERS)
 
     problems.each { |key, value|
       expect(key.to_s).to eq "answers"

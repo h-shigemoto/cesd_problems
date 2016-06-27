@@ -4,13 +4,13 @@ require "cesd_problems/version"
 module CesdProblems
 
   # get all problems.
-  GET_ALL = 0
+  ALL = 0
   # get answers only.
-  GET_ANSWERS = 1
+  ANSWERS = 1
   # get problems only.
-  GET_PROBLEMS = 2
+  PROBLEMS = 2
   # get criteria only.
-  GET_CRITERIA = 3
+  CRITERIA = 3
 
   # get ces-d problems and points by hash(Japanese)
   # @param [integer] mode get mode.
@@ -94,13 +94,13 @@ module CesdProblems
     extract_problems = nil
 
     case mode
-    when GET_ALL then
+    when ALL then
       extract_problems = problems
-    when GET_ANSWERS then
+    when ANSWERS then
       extract_problems = { answers: problems[:answers] }
-    when GET_PROBLEMS then
+    when PROBLEMS then
       extract_problems = { problems: problems[:problems] }
-    when GET_CRITERIA then
+    when CRITERIA then
       extract_problems = { criteria: problems[:criteria] }
     else
       extract_problems = nil
