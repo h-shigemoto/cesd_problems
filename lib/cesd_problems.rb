@@ -86,6 +86,15 @@ module CesdProblems
     extract_problems
   end
 
+  # get all language problems and answers(Japanese and English).
+  # @param [integer] mode get mode.
+  # @return [Hash] ces-d problems and points depends on mode.
+  def self.get_all_lang(mode=0)
+
+    # get Japanese and English problems and answers.
+    { japanese: get_ja_problems(mode), english: get_en_problems(mode) }
+  end
+
   # extract problems depends on mode.
   # @param [integer] mode get mode.
   # @return [Hash] ces-d problems and points depends on mode.

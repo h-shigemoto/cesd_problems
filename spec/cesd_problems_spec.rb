@@ -72,6 +72,15 @@ describe CesdProblems do
     }
   end
 
+  it 'get test : all language' do
+    # all languages.
+    problems = CesdProblems.get_all_lang
+    # p problems
+
+    expect(problems[:japanese]).to be_truthy
+    expect(problems[:english]).to be_truthy
+  end
+
   it 'extract test' do
     problems = CesdProblems.get_en_problems
     problems = CesdProblems.extract(problems, CesdProblems::ANSWERS)
